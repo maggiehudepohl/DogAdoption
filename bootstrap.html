@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap 5 Example</title>
+  <title>Dog Adoption Centers in Cincinnati</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -9,41 +9,120 @@
 </head>
 <body>
 
-
-  <nav class="navbar">
-    <a href="materialize.html">Home</a>
-    <a href="index.html">Adoption Centers</a>
-    <a href="aboutus.html">About Us</a>
-    <a href="availabledogs.html">Available Dogs</a>
-    <a href="Contactus.html">Contact Us</a>
-    <a href="jquery.html">JQuery</a>
-    <a href="bootstrap.html">Bootstrap</a>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Dog Adoption Centers</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="materialize.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Adoption Centers</a></li>
+        <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="availabledogs.html">Available Dogs</a></li>
+        <li class="nav-item"><a class="nav-link" href="Contactus.html">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="jquery.html">JQuery</a></li>
+        <li class="nav-item"><a class="nav-link active" href="bootstrap.html">Bootstrap</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
 
+<!-- Header Section -->
 <div class="container-fluid p-5 bg-primary text-white text-center">
-  <h1>My First Bootstrap Page</h1>
-  <p>Resize this responsive page to see the effect!</p> 
+  <h1>Welcome to Dog Adoption Centers</h1>
+  <p>Find your forever friend in Cincinnati!</p>
 </div>
-  
+
+<!-- Columns Section -->
 <div class="container mt-5">
   <div class="row">
     <div class="col-sm-4">
-      <h3>Column 1</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <h3>Why Adopt?</h3>
+      <p>Adopting a dog gives a loving animal a second chance at life and a forever home.</p>
+      <p>You save a life and create space for shelters to help even more animals in need.</p>
     </div>
     <div class="col-sm-4">
-      <h3>Column 2</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <h3>Looking For Forever Happiness?</h3>
+      <p>A dog’s unconditional love and companionship will bring endless joy and comfort to your life.</p>
+      <p>Adopting a dog creates a bond that enriches your daily experiences with loyalty and affection.</p>
     </div>
     <div class="col-sm-4">
-      <h3>Column 3</h3>        
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <h3>Support, Support, Support!!</h3>        
+      <p>Supporting dog adoption in Cincinnati helps local shelters continue their vital work in rescuing and caring for animals. </p>
+      <p>By adopting or donating, you strengthen your community and give these dogs the futures they deserve.</p>
     </div>
   </div>
 </div>
+
+<!-- Accordion Section -->
+<div class="container mt-5">
+  <h2>Adoption Center Information</h2>
+  <div class="accordion" id="adoptionAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Cincinnati Humane Society
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#adoptionAccordion">
+        <div class="accordion-body">
+          Located in the heart of Cincinnati, this center provides care and adoption services for all breeds of dogs.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          SPCA Cincinnati
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#adoptionAccordion">
+        <div class="accordion-body">
+          This center is dedicated to helping dogs find their forever homes and offers various adoption programs.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Adopt-A-Dog Cincinnati
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#adoptionAccordion">
+        <div class="accordion-body">
+          This organization specializes in rescuing and rehoming stray dogs, offering support to new pet owners.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Button Group Section -->
+<div class="container mt-5 text-center">
+  <h2>Quick Links</h2>
+  <div class="btn-group mt-3" role="group" aria-label="Quick Links">
+    <button type="button" class="btn btn-primary">Available Dogs</button>
+    <button type="button" class="btn btn-secondary">Adoption Process</button>
+    <button type="button" class="btn btn-success">Donate</button>
+  </div>
+</div>
+
+<!-- Footer Section -->
+<footer class="container mt-5 text-center">
+  <h4>Contact Us</h4>
+  <p>Email: info@dogadoptioncenters.com | Phone: (123) 456-7890</p>
+  <div class="btn-group mt-3" role="group" aria-label="Footer Links">
+    <button type="button" class="btn btn-outline-primary">Privacy Policy</button>
+    <button type="button" class="btn btn-outline-secondary">Terms of Service</button>
+    <button type="button" class="btn btn-outline-success">Help Center</button>
+  </div>
+</footer>
+
 </body>
 </html>
+
+
 
